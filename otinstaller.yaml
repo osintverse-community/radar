@@ -22,7 +22,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/radar@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/radar@sha256:53de5ab088164f199c5541e579d1f445179b691c01414e4708f4593f20bc9451
   platforms: [linux/amd64, linux/arm64]
   command: ["radar", "-domain", "{domain}", "-signatures", "/usr/share/radar/signatures.json", "-all-records"]
   output_format: json
